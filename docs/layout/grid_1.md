@@ -5,28 +5,28 @@ description: Documentation and examples for using Bootstrap's responsive flexbox
 group: layout
 ---
 
-Bootstrap 包含了一个强大的"移动端优先"的 flexbox 网格系统,可以为所有形式和尺寸新建布局。它是一个有多个层次,基于12列布局,并支持每个[media query 范围]({{ site.baseurl }}/layout/overview/#responsive-breakpoints)的系统。你可以通过 Sass minxin或者我们预置的 class 来使用它。
+Bootstrap includes a powerful mobile-first flexbox grid system for building layouts of all shapes and sizes. It's based on a 12 column layout and has multiple tiers, one for each [media query range]({{ site.baseurl }}/layout/overview/#responsive-breakpoints). You can use it with Sass mixins or our predefined classes.
 
-## 目录
+## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Grid如何工作的
+## How it works
 
-Bootstrap 的 Grid 系统使用了一系列的容器(container), 行(row), 列(column)来设计和对齐内容。使用 flexbox 实现,并且完全是响应式的。下边是一个例子,可以深入的看一下 Grid 是如何结合在一起的。
+Bootstrap's grid system uses a series of containers, rows, and columns to layout and align content. It's built with flexbox and is fully responsive. Below is an example and an in-depth look at how the grid comes together.
 
 <div class="bd-example bd-example-row">
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      1/3列
+      One of three columns
     </div>
     <div class="col-sm">
-      1/3列
+      One of three columns
     </div>
     <div class="col-sm">
-      1/3列
+      One of three columns
     </div>
   </div>
 </div>
