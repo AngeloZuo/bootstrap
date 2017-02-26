@@ -1,9 +1,10 @@
 ---
 layout: docs
-title: Grid system
+title: Grid 系统
 description: Documentation and examples for using Bootstrap's responsive flexbox grid system.
 group: layout
 ---
+(翻译 by [AngeloZ](https://github.com/AngeloZuo/bootstrap))
 
 Bootstrap 包含了一个强大的"移动端优先"的 flexbox 网格系统,可以为所有形式和尺寸新建布局。它是一个有多个层次,基于12列布局,并支持每个[media query 范围]({{ site.baseurl }}/layout/overview/#responsive-breakpoints)的系统。你可以通过 Sass minxin或者我们预置的 class 来使用它。
 
@@ -12,7 +13,7 @@ Bootstrap 包含了一个强大的"移动端优先"的 flexbox 网格系统,可�
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Grid如何工作的
+## Grid是如何工作的
 
 Bootstrap 的 Grid 系统使用了一系列的容器(container), 行(row), 列(column)来设计和对齐内容。使用 flexbox 实现,并且完全是响应式的。下边是一个例子,可以深入的看一下 Grid 是如何结合在一起的。
 
@@ -32,14 +33,17 @@ Bootstrap 的 Grid 系统使用了一系列的容器(container), 行(row), 列(c
 </div>
 </div>
 
-The above example creates three equal-width columns on small, medium, large, and extra large devices using our predefined grid classes. Those columns are centered in the page with the parent `.container`.
+上面的例子创建了一个三等宽列的布局,它使用了我们预置的Grid类,可以使用在小号,中号,大号和最大号尺寸的设备上。这些列之所以在页面里居中,是因为它们的父节点上有".container"类。
 
-Breaking it down, here's how it works:
+分步骤来看看Grid是如何起作用的:
 
-- Containers provide a means to center your site's contents. Use `.container` for fixed width or `.container-fluid` for full width.
-- Rows are horizontal groups of columns that ensure your columns are lined up properly. We use the negative margin method on `.row` to ensure all your content is aligned properly down the left side.
-- Content should be placed within columns, and only columns may be immediate children of rows.
-- Thanks to flexbox, grid columns without a set width will automatically layout with equal widths. For example, four instances of `.col-sm` will each automatically be 25% wide for small breakpoints.
+- 容器(container)提供了一种方式可以使你的网页内容居中。在固定宽度的容器上使用".container"类或者在宽度为100%的容器上使用".container-fluid"类。
+
+- 行(row)都是由一个个由列组成的组水平构成的,这样可以确保你所有的列可以正确的排列。我们在".row"类上使用负的外边距来确保你的所有内容相对有左侧都能正确的对齐。
+
+- 内容需要被放置在列中, 而且, 行的直接子节点只有是列。
+
+- 拜 flexbox 所赐, 即使没有一个确定的宽度, Grid的列也会使用相等的宽度自动的排列。比如, 四个有".col-sm"类的元素,会为小的分割点自动的变成25%的宽度。
 - Column classes indicate the number of columns you'd like to use out of the possible 12 per row. So, if you want three equal-width columns, you can use `.col-sm-4`.
 - Column `width`s are set in percentages, so they're always fluid and sized relative to their parent element.
 - Columns have horizontal `padding` to create the gutters between individual columns, however, you can remove the `margin` from rows and `padding` from columns with `.no-gutters` on the `.row`.
