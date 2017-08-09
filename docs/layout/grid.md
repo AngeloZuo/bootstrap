@@ -44,16 +44,22 @@ Bootstrap 的 Grid 系统使用了一系列的容器(container), 行(row), 列(c
 - 内容需要被放置在列中, 而且, 行的直接子节点只有是列。
 
 - 拜 flexbox 所赐, 即使没有一个确定的宽度, Grid的列也会使用相等的宽度自动的排列。比如, 四个有".col-sm"类的元素,会为小的分割点自动的变成25%的宽度。
-- Column classes indicate the number of columns you'd like to use out of the possible 12 per row. So, if you want three equal-width columns, you can use `.col-sm-4`.
-- Column `width`s are set in percentages, so they're always fluid and sized relative to their parent element.
-- Columns have horizontal `padding` to create the gutters between individual columns, however, you can remove the `margin` from rows and `padding` from columns with `.no-gutters` on the `.row`.
-- There are five grid tiers, one for each [responsive breakpoint]({{ site.baseurl }}/layout/overview/#responsive-breakpoints): all breakpoints (extra small), small, medium, large, and extra large.
-- Grid tiers are based on minimum widths, meaning they apply to that one tier and all those above it (e.g., `.col-sm-4` applies to small, medium, large, and extra large devices).
+
+- 在列上的类指明，在每行12列时，你想要使用的列的数目。所以，如果，你想要三等分列，你可以使用`.col-sm-4`。
+
+- 列的宽度被设置为百分数，所以对于他们的父元素，他们一直都是流动的且尺寸是相对的。
+
+- 所有的列都有一个水平的`padding`，能够在单独的列之间创建槽间隔（gutter），而且你可以在`.row`上使用`.no-gutters`类删除行间的`margin`和列间的`padding`。
+
+- 一共有五种网格层，每种对应一个[响应式断点（responsive breakpoint）]({{ site.baseurl }}/layout/overview/#responsive-breakpoints)：所有断点（extra small），小号（small），中号（medium），大号（large），超大号（extra large）。
+
+- 网格层是基于最小的宽度，意味着它们可以应用一种及其以上所有的网格层。（比如，`.col-sm-4`适用于small，medium，large，and extra large尺寸的设备）。
 - You can use predefined grid classes or Sass mixins for more semantic markup.
+- 你可以为语义化的标记使用预定义的网格类或者SASS的 mixin。
 
-Be aware of the limitations and [bugs around flexbox](https://github.com/philipwalton/flexbugs), like the [inability to use some HTML elements as flex containers](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers).
+了解[关于flexbox的缺陷（bugs around flexbox）](https://github.com/philipwalton/flexbugs)和局限性, 比如 [不能作为flex容器的一些HTML元素（inability to use some HTML elements as flex containers）](https://github.com/philipwalton/flexbugs#9-some-html-elements-cant-be-flex-containers).
 
-Sounds good? Great, let's move on to seeing all that in an example.
+听起来还不错嘛？很好，我们一起在例子中学习这些东西吧。
 
 ## Grid options
 
